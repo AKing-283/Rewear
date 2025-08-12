@@ -267,7 +267,20 @@ body {
   color: #5856d6;
   font-weight: 600;
 }
-
+.stat{
+  height: 9rem;
+  width: 20rem;
+  padding: 2rem;
+  transition: width 0.3s ease-in-out;
+  text-align: center;
+  background-color:rgba(255, 255, 255, 0.353)  ;
+  border-radius: 30px;
+}
+.stat:hover{
+  background-color: rgba(255, 255, 255, 0.812) ; 
+  width: 20.5rem;
+  
+}
 .hero-stats .stat i {
   margin-right: 8px;
   color: #007aff;
