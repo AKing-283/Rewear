@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -19,19 +20,28 @@
                 <span>ReWear</span>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#" class="nav-link" onclick="showPage('landing')">Home</a>
-                <a href="#" class="nav-link" onclick="showPage('browse')">Browse</a>
-                <a href="#" class="nav-link" onclick="showPage('feedback')">Feedback</a>
-                <a href="#" class="nav-link" onclick="showPage('add-item')">Add Item</a>
-                <a href="#" class="nav-link" onclick="showPage('dashboard')">Dashboard</a>
-                <a href="#" class="nav-link" onclick="showPage('profile')" id="profile-link" style="display: none;">Profile</a>
-                <a href="#" class="nav-link" onclick="showPage('admin')" id="admin-link" style="display: none;">Admin</a>
-            </div>
-            <div class="nav-auth">
+
+                <div class="navItems">
+                    <a href="#" class="nav-link" onclick="showPage('landing')">Home</a>
+                    <a href="#" class="nav-link" onclick="showPage('browse')">Browse</a>
+                    <a href="#" class="nav-link" onclick="showPage('feedback')">Feedback</a>
+                    <a href="#" class="nav-link" onclick="showPage('add-item')" id="add-item-link"
+                        style="display: none;">Add Item</a>
+                    <a href="#" class="nav-link" onclick="showPage('dashboard')" id="dashboard-link"
+                        style="display: none;">Dashboard</a>
+                    <a href="#" class="nav-link" onclick="showPage('profile')" id="profile-link"
+                        style="display: none;">Profile</a>
+                    <a href="#" class="nav-link" onclick="showPage('admin')" id="admin-link"
+                        style="display: none;">Admin</a>
+                </div>
+
                 <div id="auth-buttons">
                     <button class="btn btn-outline" onclick="showPage('login')">Login</button>
                     <button class="btn btn-primary" onclick="showPage('signup')">Sign Up</button>
                 </div>
+            </div>
+            <div class="nav-auth">
+
                 <div id="user-menu" style="display: none;">
                     <span id="user-points" class="points-badge"></span>
                     <span id="username-display"></span>
@@ -110,34 +120,38 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="how-rewear" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center;">
             <div class="container">
-                <h2>How ReWear Works</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-upload"></i>
-                        </div>
-                        <h3>List Your Items</h3>
-                        <p>Upload photos and details of clothing you no longer wear.</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: #333;">How ReWear Works</h2>
+                <div class="how-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+
+                    <div class="how-card">
+
+                        <i class="fas fa-upload" style="font-size: 2.5rem; color: #4CAF50; margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #222;">List Your Items</h3>
+                        <p style="color: #555;">Upload photos and details of clothing you no longer wear.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                        <h3>Swap or Redeem</h3>
-                        <p>Exchange directly with others or use points to get items you love.</p>
+
+                    <div class="how-card">
+
+                        <i class="fas fa-exchange-alt"
+                            style="font-size: 2.5rem; color: #FF9800; margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #222;">Swap or Redeem</h3>
+                        <p style="color: #555;">Exchange directly with others or use points to get items you love.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h3>Reduce Waste</h3>
-                        <p>Help create a more sustainable fashion ecosystem.</p>
+
+                    <div class="how-card">
+
+                        <i class="fas fa-leaf" style="font-size: 2.5rem; color: #8BC34A; margin-bottom: 20px;"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px; color: #222;">Reduce Waste</h3>
+                        <p style="color: #555;">Help create a more sustainable fashion ecosystem.</p>
                     </div>
+
                 </div>
             </div>
         </section>
+
 
         <section class="featured-items">
             <div class="container">

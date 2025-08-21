@@ -1,2 +1,6 @@
 venv/
 src/database/app.db 
+# Environment variables
+.env
+.env.*
+!*.env.example  # Keep example files
