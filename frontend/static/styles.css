@@ -663,6 +663,12 @@ body {
   font-weight: 500;
   color: #1d1d1f;
 }
+[data-theme="dark"] .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #f1f1f4;
+}
 
 .form-group input,
 .form-group select,
