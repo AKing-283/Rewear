@@ -84,6 +84,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // Call scroll-to-top setup here
   setupScrollToTop();
+
+  // Hamburger menu toggle for mobile
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', function () {
+      navMenu.classList.toggle('open');
+  });
+
+  // Optional: Close menu when a link is clicked (for better UX)
+  document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+              navMenu.classList.remove('open');
+          }
+      });
+  });
 });
 
 
